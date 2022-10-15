@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>BookNavi - 도서 위치 검색 시스템</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <style>
+            body{
+                background-color: #2E4053;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <p class="display-1" style="margin-top: 1em; text-align: center; color:white; font-size:2em;">"{{ bookname }}" 책의 위치</p>
+            <p style="font-size:1.5rem; text-align: center; color:white; font-size:1em;">1. {{ bookshelf }}번 책장에 갑니다.</p>
+            <p style="font-size:1.5rem; text-align: center; color:white; font-size:1em;">2. "{{ prevbook }}"과(와) "{{ nextbook }}" 책을 찾습니다.</p>
+            <p style="font-size:1.5rem; text-align: center; color:white; font-size:1em;">3. "{{ bookname }}" 책을 두 책 사이에 끼워 넣습니다.</p>
+            <hr>
+            <a href="/search" class="btn btn-primary" style="margin-top: 0.3em;">다시 검색하기</a>
+            <a href="/" class="btn btn-primary" style="margin-top: 0.3em;">메인으로</a>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    </body>
+</html>
